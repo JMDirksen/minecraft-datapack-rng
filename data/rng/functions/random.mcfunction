@@ -1,13 +1,3 @@
-# Example generating a random number/score
-# Set the max number:
-#   scoreboard players set $max random 100
-# Run the random function:
-#   function rng:random
-# Output the random number:
-#   tellraw @a ["",{"text":"Random number: "},{"score":{"name":"$random","objective":"random"}}]
-#
-# The player named "$random" now contains a random number between (including) 1 and 100 in the "random" score.
-
 # Makes sure the max variable has a value (default: generate a number between 1 and 5)
 execute unless score $max random matches 1.. run scoreboard players set $max random 5
 
